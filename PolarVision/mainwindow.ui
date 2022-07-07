@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1210</width>
+    <height>785</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="ButtonToStopProgram">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>600</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(31, 25, 25);
+color: rgb(0, 170, 127);
+selection-background-color: rgb(25, 109, 83);</string>
+    </property>
+    <property name="text">
+     <string>EXIT</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="LabelToFrame">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>941</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-width: 4px;
+border-color: rgb(255, 255, 0);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="LabelToOut">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>40</y>
+       <width>421</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: rgb(0, 170, 127);
+border-radius: 20px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>471</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_2">
+      <widget class="QLabel" name="LabelToori">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>421</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: solid;
+border-width: 2px;
+border-color: rgb(0, 170, 127);
+border-radius: 20px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <widget class="QFrame" name="FrameTo4P">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>421</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="LabelTo0">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>180</width>
+          <height>170</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style: solid;
+border-width: 4px;
+border-color: rgb(0, 170, 127);
+border-radius: 20px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="LabelTo45">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>20</y>
+          <width>180</width>
+          <height>170</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style: solid;
+border-width: 4px;
+border-color: rgb(0, 170, 127);
+border-radius: 20px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string>45</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="LabelTo90">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>240</y>
+          <width>180</width>
+          <height>170</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style: solid;
+border-width: 4px;
+border-color: rgb(0, 170, 127);
+border-radius: 20px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string>90</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="LabelTo135">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>240</y>
+          <width>180</width>
+          <height>170</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style: solid;
+border-width: 4px;
+border-color: rgb(0, 170, 127);
+border-radius: 20px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string>135</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QToolBox" name="toolBox">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>40</y>
+      <width>181</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(31, 25, 25);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Cameras">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>181</width>
+       <height>183</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string>Cameras</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>0</y>
+        <width>121</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="ButtonToOpenCamera_2">
+         <property name="styleSheet">
+          <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+         </property>
+         <property name="text">
+          <string>OpenCamera</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ButtonToStartStream_2">
+         <property name="styleSheet">
+          <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+         </property>
+         <property name="text">
+          <string>StartStream</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ButtonToCloseCamera_2">
+         <property name="styleSheet">
+          <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+         </property>
+         <property name="text">
+          <string>closeCamera</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Features">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>181</width>
+       <height>183</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string>Features</string>
+     </attribute>
+     <widget class="QRadioButton" name="radioButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>89</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Auto Gain</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Auto Expoture</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LabelToGainText">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="text">
+       <string>GAIN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LabelToExText">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="text">
+       <string>Expoture</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdNumber_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>90</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <zorder>radioButton</zorder>
+     <zorder>radioButton_2</zorder>
+     <zorder>horizontalSlider</zorder>
+     <zorder>horizontalSlider_2</zorder>
+     <zorder>LabelToGainText</zorder>
+     <zorder>lcdNumber_2</zorder>
+     <zorder>LabelToExText</zorder>
+     <zorder>lcdNumber_3</zorder>
+    </widget>
+    <widget class="QWidget" name="page">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>181</width>
+       <height>183</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string>Imshow Foramt</string>
+     </attribute>
+     <widget class="QPushButton" name="ButtonToOri">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>119</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>Original</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonTo4P">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>119</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>0,45,90,135</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToPOLMono8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>119</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>PolarizeMono8</string>
+      </property>
+     </widget>
+     <zorder>ButtonToPOLMono8</zorder>
+     <zorder>ButtonToOri</zorder>
+     <zorder>ButtonTo4P</zorder>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>320</y>
+      <width>171</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Capture</string>
+     </attribute>
+     <widget class="QPushButton" name="ButtonToCapture">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>Capture</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToChooseImgPath">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>ChoosePath</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Video</string>
+     </attribute>
+     <widget class="QPushButton" name="ButtonToStartVi">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>60</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToStopVi">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>90</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>End</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToChooseVidoPath">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>ChoosePath</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>560</y>
+      <width>481</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Polar Parameters</string>
+     </attribute>
+     <widget class="QPushButton" name="ButtonToDolp">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>Dolp</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToDolpStop">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>stop</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToAop">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>30</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>Aop</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToAopStop">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>30</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>stop</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Polar Pure</string>
+     </attribute>
+     <widget class="QPushButton" name="ButtonToDeGlint">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>40</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>deglint</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToDeGlinStop">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>40</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>stop</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToOD">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>40</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>Object Detection</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToODStop">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>40</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>stop</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToDehazeStop">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>stop</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ButtonToDehazeNow">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(92, 255, 67);
+color: rgb(255, 255, 255);
+background-color: rgb(0, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>dehazenow</string>
+      </property>
+     </widget>
+     <zorder>ButtonToDeGlint</zorder>
+     <zorder>ButtonToDeGlinStop</zorder>
+     <zorder>ButtonToOD</zorder>
+     <zorder>ButtonToODStop</zorder>
+     <zorder>ButtonToDehazeNow</zorder>
+     <zorder>ButtonToDehazeStop</zorder>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="LabelToStartGif">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>-120</y>
+      <width>1271</width>
+      <height>901</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <zorder>LabelToStartGif</zorder>
+   <zorder>tabWidget_2</zorder>
+   <zorder>LabelToFrame</zorder>
+   <zorder>ButtonToStopProgram</zorder>
+   <zorder>toolBox</zorder>
+   <zorder>tabWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1210</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Toolbars</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actioncameras"/>
+    <addaction name="actionFeatures"/>
+   </widget>
+   <widget class="QMenu" name="menuPolarVison">
+    <property name="title">
+     <string>PolarVison</string>
+    </property>
+    <widget class="QMenu" name="menuPolar_Parameters">
+     <property name="title">
+      <string>Polar Parameters</string>
+     </property>
+     <addaction name="action0_45_90_135"/>
+     <addaction name="actionDolp"/>
+     <addaction name="actionAop"/>
+    </widget>
+    <widget class="QMenu" name="menuPolar_Pure">
+     <property name="title">
+      <string>Polar Pure</string>
+     </property>
+     <addaction name="actionDehaze"/>
+     <addaction name="actionDeglint"/>
+     <addaction name="actionObject_Detection"/>
+    </widget>
+    <addaction name="menuPolar_Parameters"/>
+    <addaction name="menuPolar_Pure"/>
+   </widget>
+   <widget class="QMenu" name="menuSave">
+    <property name="title">
+     <string>Save</string>
+    </property>
+    <addaction name="actionImage_Path"/>
+    <addaction name="actionVideo_Path"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuPolarVison"/>
+   <addaction name="menuSave"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actioncameras">
+   <property name="text">
+    <string>cameras</string>
+   </property>
+  </action>
+  <action name="actionFeatures">
+   <property name="text">
+    <string>Features</string>
+   </property>
+  </action>
+  <action name="action0_45_90_135">
+   <property name="text">
+    <string>0,45,90,135</string>
+   </property>
+  </action>
+  <action name="actionDolp">
+   <property name="text">
+    <string>Dolp </string>
+   </property>
+  </action>
+  <action name="actionAop">
+   <property name="text">
+    <string>Aop</string>
+   </property>
+  </action>
+  <action name="actionDehaze">
+   <property name="text">
+    <string>Dehaze</string>
+   </property>
+  </action>
+  <action name="actionDeglint">
+   <property name="text">
+    <string>Deglint</string>
+   </property>
+  </action>
+  <action name="actionObject_Detection">
+   <property name="text">
+    <string>Object Detection</string>
+   </property>
+  </action>
+  <action name="actionImage_Path">
+   <property name="text">
+    <string>Image Path</string>
+   </property>
+  </action>
+  <action name="actionVideo_Path">
+   <property name="text">
+    <string>Video Path</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
